@@ -1,0 +1,32 @@
+.card {
+    background-color: #FFFFFF;
+    color: #19191A;
+    padding: 14px;
+    width: 190px;
+    min-width: 190px;
+    height: 171px;
+    border-radius: 8.4px;
+    gap: 8.4px;
+    box-shadow: 0 2px 7px #0000000A;
+}
+
+.testimonialCard {
+    background-color: #FFFFFF;
+    color: #19191A;
+    width: 353px;
+    min-width: 353px;
+    max-width: 531px;
+    height: 136px;
+    top: 827px;
+    left: 160px;
+    padding: 20px;
+    border-radius: 12px;
+    gap: 20px;
+}
+.testimonialCard .quote {
+    display: -webkit-box;
+    max-width: 353px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}

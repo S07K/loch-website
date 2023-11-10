@@ -1,0 +1,148 @@
+.leftPanelSection {
+    color: #f2f2f2;
+}
+
+.sectionWrapper1, .sectionWrapper2 {
+    display: flex;
+}
+.sectionWrapper1 {
+    justify-content: stretch;
+    gap: 11px;
+}
+.sectionWrapper2 {
+    justify-content: space-between;
+    padding-right: 62px;
+}
+.infoSection1, .infoSection2 {
+    color: #f2f2f2;
+    max-width: 322px;
+}
+.infoSection1 h1 {
+    text-shadow: 0 4px 4px #00000040;
+    /* -webkit-text-stroke: 1px black;
+    -webkit-text-fill-color: #f2f2f2; */
+}
+.infoSection2 {
+    padding-top: 16px;
+    padding-left: 30px;
+}
+.infoSection2 div {
+    text-align: -webkit-right;
+}
+
+.testinomialHeading {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: right;
+}
+
+.notificationSettings {
+    display: flex;
+    width: 407px;
+    overflow: hidden;
+}
+.testimonials {
+    display: flex;
+    overflow: hidden;
+}
+.testimonials .cardsWrapper::-webkit-scrollbar {
+    display: none;
+}
+.testimonials .cardsWrapper {
+    overflow-y: hidden;
+    overflow-x: auto;
+    padding-right: 20px;
+}
+.cardsWrapper {
+    display: flex;
+    gap: 14px;
+}
+.rightShadow, .leftShadow {
+    position: absolute;
+    width: 80px;
+    height: 100%;
+}
+.rightShadow {
+    left: 0;
+    background: linear-gradient(90deg, #165dff45, #165dff14, #165dff14, #FFFFFF33);
+}
+.leftShadow {
+    right: 0;
+    background: linear-gradient(270deg, #165dff45, #165dff14, #165dff14, #FFFFFF33);
+}
+
+
+.carousel {
+	position: relative;
+	width: 100%;
+	text-align: center;
+    animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+    0%, 25% {
+      transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-190px);
+    }
+    50% {
+      transform: translateX(-260px);
+    }
+    75% { 
+      transform: translateX(-190px);
+    }
+    100% { 
+      transform: translateX(0px);
+    }
+  }
+
+  @media (max-width: 1100px) { 
+    .sectionWrapper1, .sectionWrapper2 {
+        flex-wrap: wrap;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .leftPanelSection {
+        padding: 10px 20px !important;
+    }
+    .sectionWrapper1 {
+        justify-content: flex-start;
+        gap: 11px;
+    }
+    .notificationSettings {
+        margin-left: 0;
+    }
+    .sectionWrapper2 {
+        justify-content: center;
+        padding-right: 62px;
+    }
+    .infoSection2 {
+        padding: 20px 0;
+    }
+    .infoSection2 > div {
+        text-align: left;
+    }
+    .infoSection2 > * {
+        text-align: left;
+    }
+    .testinomialHeading {
+        text-align: left;
+    }
+    .footer {
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    .testimonials {
+        margin-left: 0;
+    }
+  }
+
+
+  

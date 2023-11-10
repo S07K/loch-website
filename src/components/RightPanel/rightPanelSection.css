@@ -1,0 +1,63 @@
+.rightPanelSection {
+    width: 365px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    z-index: 1;
+}
+
+.formHeading {
+    color: #B0B1B3;
+    font-size: 39px;
+    font-weight: 500;
+    line-height: 47px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.formInput {
+    width: 340px;
+    height: 59px;
+    top: 495px;
+    left: 950px;
+    border-radius: 8px;
+    border: 1px;
+    margin-top: 32px;
+}
+
+.submitBtn {
+    background-color: #19191A;
+    color: #fff;
+    width: 340px;
+    height: 59px;
+    top: 578px;
+    left: 950px;
+    margin-top: 24px;
+    padding: 18px 28px 18px 28px;
+    border-radius: 8px;
+    border: 1px;
+    gap: 12px;
+}
+
+.formInfo {
+    padding-top: 24px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+@media (max-width: 1000px) {
+    .rightPanelSection {
+        padding: 20px 10px;
+        width: 340px;
+        justify-content: flex-start;
+    }
+    .rightPanelSection h1 {
+        font-size: 24px;
+        line-height: normal;
+    }
+  }

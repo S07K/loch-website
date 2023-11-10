@@ -1,24 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import LeftPanelSection from './components/LeftPanel/LeftPanelSection';
+import RightPanelSection from './components/RightPanel/RightPanelSection';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="grid grid grid-cols-1 md:grid-cols-2 h-screen">
+        <div className="md:col-span-1 h-full">
+          <LeftPanelSection />
+        </div>
+        <div className="md:col-span-1 md:p-4 h-full justify-self-center self-center">
+          <RightPanelSection />
+        </div>
+    </div>
     </div>
   );
 }
